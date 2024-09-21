@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Technical Documentation</title> 
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <!--link each main section by its given id, give text-->
+      <a class="nav-link" href="#introduction">Introduction</a> 
+      <a class="nav-link" href="#what_you_should_already_know">What You Should Already Know</a>
+      <a class="nav-link" href="#boiler-plate">Boiler Plate</a>
+      <a class="nav-link" href="#html_structure">HTML Structure</a>
+      <a class="nav-link" href="#publishing">Publishing using GitHub</a>
+    </nav>
+    
+    <section class="main-section" id="Introduction"> 
+      <header>Introduction</header>
+      <article>
+        <p>Hypertext Markup Language (HTML) is the standard language for documents which are displayed on web browsers. HTML defines content and structure that will be displayed to the end user. </p>
+        <p>HTML is often associated with CSS, or Cascading Style Sheets and Javascript.</p>
+        <ul>
+          <li>The current iteration of HTML is HTML-5.</li>
+          <li>HTML was initially released in 1993, 31 years ago.</li>
+        </ul>
+      </article>
+    </section>
+    
+    <section class="main-section" id="#what_you_should_already_know"> 
+      <header>What You Should Already Know</header>
+      <article>
+        <p>This guide is for entry-level web development students. Working knowledge of the following are helpful:</p>
+        <ul>
+          <li>Basic knowledge of HTML structure</li>
+          <li>Functions of HTML elements</li>
+        </ul>
+        <p>If you are unfamiliar with anything mentioned in this document, please refer to <a href="https://freecodecamp.com">freeCodeCamp.com</a></p>
+      </article>
+    </section>
+   
+    <section class="main-section" id="boiler_plate"> <!--add id that corresponds to header content-->
+      <header>Boiler Plate</header>
+      <article>
+        <h2>Getting Started</h2>
+          <p>To get started with writing HTML, open Notepad, or VSCode and name the file index.html</p>
+          <p>A basic boiler plate will include the following elements</p>
+          <p><code class="code">!DOCTYPE html</code> </p>
+            <ul>
+              <li>This will tell the browser the document will use HTML-5, the most current version.</li>
+            </ul>
+          <p><code class="code">html lang="en"</html></code></p>
+            <ul>
+              <li>The <code class="code">html</code>  element will contain everything rendered in HTML and tell the browser the default language is English</li>
+            </ul>
+          <p><code class="code">meta charset="UTF-8"</code></p>
+            <ul>
+              <li><code class="code">UTF-8</code> is the standard encoding character set used by HTML  </li>
+              <li><code class="code">UTF-8</code> will tell the browser to use UTF-8 to translate binary to characters, which will be displayed as text/numbers on a website. </li>
+            </ul>
+          <p><code class="code">title</code></p>
+            <ul>
+              <li><code class="code">title</code> will display the title of the page in the tab and is used for screen reader accessibility purposes</li>
+            </ul>
+          <p><code class="code">meta name="viewport" content="width=device-width, initial-scale=1.0"</code></p>
+            <ul>
+              <li>Tells the browser to display the page as the device's width with a scale of 1.0 to start.</li>
+              <li>Viewport is important for scaling and sizing in CSS styling. Elements can be set to percent of the viewport</li>
+            </ul>
+          <p><code class="code">link rel="stylesheet" href="styles.css"</code>
+            <ul>
+              <li>Tells the browser to used the linked CSS stylesheet to apply user-made styles to the web page.</li>
+              <li><code class="code">link</code>  can also link custom/non-standard font-families.</li>
+            </ul>
+      </article>
+    </section>
+   
+    <section class="main-section" id="html_structure"> 
+      <header>HTML Structure</header>
+      <article> <!--Maybe could make this into a table? Could add reference link for more element descriptions-->
+        <p>This section will cover the basic hierarchy of HTML elements </p>
+        <p><code class="code">html</code> contains all HMTL elements on a webpage</p>
+        <p><code class="code">head</code> contains <code class="code">meta,</code> <code class="code">links,</code> <code class="code">title</code> elements.</p>
+        <p><code class="code">main</code> differentiates content on page from navigation links or ads</p>
+        <p><code class="code">nav</code> used to contain all the navigation links on a webpage</p>
+        <p><code class="code">body</code> contains the main content of a page between the <code class="code">header</code> and <code class="code">footer</code></p>
+        <p><code class="code">div</code> generic container element for text, images, links</p>
+        <p><code class="code">section, article</code> more specific container for text segments on a webpage</p>
+        <p><code class="code">p</code> paragraph element for text within a <code class="code">div, section, article</code></p>
+        <p><code class="code">img</code> container element for an image</p>
+          <ul>
+            <li>takes <code class="code">src</code> for image link</li>
+            <li>self-containing element. Does not need a closing tag</li>
+          </ul>
+        <p><code class="code">a</code> stands for anchor. Used to contain a hyperlink which can be wrapped around text or an <code class="code">img</code> element</p>
+        <p><code class="code">input</code> used in form creation and buttons. Usually nested in a <code class="code">div</code> or <code class="code">label</code> element</p>
+        
+
+      </article>
+
+    </section>
+    
+    <section class="main-section" id="publishing"> <!--add id that corresponds to header content-->
+      <header>Publishing website using GitHub</header>
+      <article>
+        <p>There are many ways to publish your projects and take your websites live. For a student, GitHub can be a great free or low-cost option to publish your work and build a portfolio.
+          Below are the steps to publish your work with GitHub.
+        </p>
+        <ol>
+          <li>Create a <a href="https://www.github.com" target="_blank">Github account</a></li>
+          <li>Download <a href="https://desktop.github.com/download/">GitHub Desktop and sign in to your GitHub profile </a></li>
+          <li>Create a new repository with CTRL+N, or going to the file tab.</li>
+          <li>Pick a file location and add a name and description. Click initialize repository with a read.me. Click create repository</li>
+          <li>Click Publish Repository </li>
+          <li>Click View on GitHub</li>
+        </ol>
+      </article>
+    </section>
+  
+  </main>
