@@ -5,19 +5,22 @@
     <title>HTML Technical Documentation</title> 
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0cb60b4512.js" crossorigin="anonymous"></script>
+
   </head>
   <main id="main-doc">
     <nav id="navbar">
-      <header>HTML Documentation</header>
-      <!--link each main section by its given id, give text-->
-      <a class="nav-link" href="#introduction">Introduction</a> 
-      <a class="nav-link" href="#what_you_should_already_know">What You Should Already Know</a>
-      <a class="nav-link" href="#boiler-plate">Boiler Plate</a>
-      <a class="nav-link" href="#html_structure">HTML Structure</a>
-      <a class="nav-link" href="#publishing">Publishing using GitHub</a>
+      <header class="nav-head">HTML Documentation</header>
+      <ul class="nav-links">
+      <li><a class="nav-link" href="#intro"><i class="fa-solid fa-house"></i> Introduction</a> </li>
+      <li><a class="nav-link" href="#what_you_should_already_know"><i class="fa-solid fa-book"></i>  What You Should Already Know</a></li>
+      <li><a class="nav-link" href="#boiler-plate"><i class="fa-solid fa-plate-wheat"></i>  Boiler Plate</a></li>
+      <li><a class="nav-link" href="#html_structure"><i class="fa-solid fa-code"></i>  HTML Structure</a></li>
+      <li><a class="nav-link" href="#publishing"><i class="fa-brands fa-github"></i>  Publishing using GitHub</a></li>
+    </ul>
     </nav>
     
-    <section class="main-section" id="Introduction"> 
+    <section class="main-section" id="intro"> 
       <header>Introduction</header>
       <article>
         <p>Hypertext Markup Language (HTML) is the standard language for documents which are displayed on web browsers. HTML defines content and structure that will be displayed to the end user. </p>
@@ -44,7 +47,7 @@
     <section class="main-section" id="boiler_plate"> <!--add id that corresponds to header content-->
       <header>Boiler Plate</header>
       <article>
-        <h2>Getting Started</h2>
+        <p>Getting Started</p>
           <p>To get started with writing HTML, open Notepad, or VSCode and name the file index.html</p>
           <p>A basic boiler plate will include the following elements</p>
           <p><code class="code">!DOCTYPE html</code> </p>
