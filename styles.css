@@ -89,8 +89,8 @@ h2 {font-size: 1.4rem;
 padding-bottom: 30px;
 padding-top: 30px;}
 
-img {max-width: 40%;
-max-height: 50%;
+img {max-width: 40vw;
+max-height: 50vh;
 object-fit: cover;}
 
 #settings {display:block;
