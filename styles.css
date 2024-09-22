@@ -51,7 +51,7 @@ padding: 10px 14px;}
 .nav-links li a:visited {color:#fff;
 }
 
-.main-section {border: 2px solid red;
+.main-section {
     display:block;
     gap: 20px;
 padding: 20px;
@@ -65,17 +65,35 @@ font-size: 2rem;
 font-weight: bold;
 }
 
-p {line-height: 1.8;
+p {line-height: 2.2;
 font-size: 1.2rem;
+padding: 10px;
 }
 
-li:not(.nav-links) {font-size: 1.0rem;
+li:not(.nav-links) {font-size: 1.2rem;
 line-height: 2.0;
 }
 
 ul:not(.nav-links) {
 margin-left: 20px;}
 
+ol {margin-left: 20px;
+}
 
-/* Make headers bigger than h2 elements */
-/* navbar to left, not disappear on scroll */
+
+.code {background:#121212;
+border: 2px solid #121212;
+border-radius: 3px;}
+
+h2 {font-size: 1.4rem;
+padding-bottom: 30px;
+padding-top: 30px;}
+
+img {max-width: 40%;
+max-height: 50%;
+object-fit: cover;}
+
+#settings {display:block;
+margin-bottom: 20px;}
+
+@media (min-width: 768px) {body {width: 100%;}}
